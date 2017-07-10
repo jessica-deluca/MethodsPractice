@@ -13,16 +13,24 @@ namespace MethodsPractice
             // int answer = Add(5, 7); // calling Add method (aka invoking; call by using their name)
             // Console.WriteLine(answer);
 
-            Console.WriteLine("Hello. Please enter the first nuumber to be added.");
-            int numberOne = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Hello. Please enter the first nuumber to be added.");
+            //int numberOne = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Hello. Please enter the second nuumber to be added.");
-            int numberTwo = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Hello. Please enter the second nuumber to be added.");
+            //int numberTwo = int.Parse(Console.ReadLine());
 
-            int answer = Add(numberOne, numberTwo);
-            Console.WriteLine("The sum of your two numbers is " + answer);
+            //int answer = Add(numberOne, numberTwo);
+            //Console.WriteLine("The sum of your two numbers is " + answer);
 
+            //RobotWarning("Will Robinson");
+            //Useless();
 
+            string myBirthMonth = "September";
+            string myFriendBirthMonth = "December";
+            string myVehicle = Vehicle(myBirthMonth);
+            string myFriendVehicle = Vehicle(myFriendBirthMonth);
+
+            Console.WriteLine("My future vehicle is {0} and Jordan's future vehicle {1}.", myVehicle, myFriendVehicle); // {0} and {1} are placeholders
 
         }
 
@@ -45,5 +53,30 @@ namespace MethodsPractice
 
         // if you have a method that does not have a return value, you would use key word "void"
         // when we have a void return type, we don't need to use the keyword "return"
+
+        public static void RobotWarning(string name) // void doesn't do anything with it; it just takes it and uses it
+        {
+            Console.WriteLine("Danger, " + name + "!!");
+        }
+
+        public static void Useless()
+        {
+            Console.WriteLine("Blah blah blah");
+        }
+
+        public static string Vehicle(string birthMonth)
+        {
+            string vehicleFortune;
+            if (birthMonth.ToUpper() == "SEPTEMBER" || birthMonth.ToUpper() == "OCTOBER")
+            {
+                vehicleFortune = "Hoverboard";
+            }
+            else
+            {
+                vehicleFortune = "SUV";
+            }
+            return vehicleFortune;
+        }
+
     }
 }
