@@ -39,10 +39,16 @@ namespace MethodsPractice
             //int ageOfUser = 30;
             //RetirementCalculator(ageOfUser);
 
-            double hoursWorkedWeekly = 42.3d;
-            double hourlyWage = 12.50d;
+            //double hoursWorkedWeekly = 42.3d;
+            //double hourlyWage = 12.50d;
 
-            Console.WriteLine("Your monthly wage is {0}.", WageCalculator(hoursWorkedWeekly, hourlyWage));
+            //Console.WriteLine("Your monthly wage is {0}.", WageCalculator(hoursWorkedWeekly, hourlyWage));
+
+            //int numberOne = 1;
+            //int numberTwo = 2;
+            //int numberThree = 3;
+
+            //Average(numberOne, numberTwo, numberThree);
 
     }
 
@@ -115,9 +121,37 @@ namespace MethodsPractice
 
         public static double WageCalculator(double hoursWorkedWeekly, double hourlyWage)
         {
-            // This method should calculate the monthly wage
-            double monthlyWage = (hoursWorkedWeekly * 52 * hourlyWage) / 12;
+            double monthlyWage = (hoursWorkedWeekly * 52 * hourlyWage) / 12; // method will calculate the montly wage
             return monthlyWage;
+        }
+
+        // Create two methods of your choosing.
+        // At least one of the methods should have a non-void return type.
+        // Both of the methods should take at least one parameter.
+        // Remember when naming your method that it should represent what your method does.
+        // Your method should only aim to accomplish one thing.
+        // Be creative.
+
+        public static void Average(int numberOne, int numberTwo, int numberThree)
+        {
+            int average = (numberOne + numberTwo + numberThree) / 3;
+            Console.WriteLine(average);
+        }
+
+        // If user enters QUIT, program says "Are you sure your want to quit?"
+
+        public static string QuitReponse(string userQuitRespsonseAnswer)
+        {
+            string quitResponseOutput;
+            if (userQuitRespsonseAnswer.ToUpper() == "YES")
+            {
+                quitResponseOutput = "Thanks for playing!";
+            }
+            else
+            {
+                quitResponseOutput = "Good luck!";
+            }
+            return quitResponseOutput;
         }
 
     }
