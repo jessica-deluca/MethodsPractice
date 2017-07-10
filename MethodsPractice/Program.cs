@@ -25,12 +25,19 @@ namespace MethodsPractice
             //RobotWarning("Will Robinson");
             //Useless();
 
-            string myBirthMonth = "September";
-            string myFriendBirthMonth = "December";
-            string myVehicle = Vehicle(myBirthMonth);
-            string myFriendVehicle = Vehicle(myFriendBirthMonth);
+            //string myBirthMonth = "September";
+            //string myFriendBirthMonth = "December";
+            //string myVehicle = Vehicle(myBirthMonth);
+            //string myFriendVehicle = Vehicle(myFriendBirthMonth);
 
-            Console.WriteLine("My future vehicle is {0} and Jordan's future vehicle {1}.", myVehicle, myFriendVehicle); // {0} and {1} are placeholders
+            //Console.WriteLine("My future vehicle is {0} and Jordan's future vehicle {1}.", myVehicle, myFriendVehicle); // {0} and {1} are placeholders
+
+            string user = "Jessica";
+            string userFavoriteFood = "ice cream";
+            FavoriteFoods(user, userFavoriteFood);
+       
+            int ageOfUser = 30;
+            RetirementCalculator(ageOfUser);
 
         }
 
@@ -77,6 +84,30 @@ namespace MethodsPractice
             }
             return vehicleFortune;
         }
+
+        // Create a method called FavoriteFoods.
+        // It should take two string parameters. One representing a name, and the other representing a favorite food.
+        // The return type should be void.
+        // The method should concatenate.
+
+        public static void FavoriteFoods(string name, string favoriteFood)
+        {
+            Console.WriteLine(name + "'s favorite food" + " is " + favoriteFood);
+        }
+
+        // Create a method called RetirementCalculator.
+        // It should take an int as a parameter representing the user's age.
+        // The method should calculate how many more years until the user retires using 65 as the age of retirement.
+        // The return type should be void.
+        // Once it calculates the user's retirement age it should print:
+        // "The user will retire in X years" where X represents the value that was calculated.
+
+        public static void RetirementCalculator(int userAge)
+        {
+            int yearsUntilRetirement = 65 - userAge;
+            Console.WriteLine("The user will retire in " + yearsUntilRetirement + " years.");
+        }
+
 
     }
 }
