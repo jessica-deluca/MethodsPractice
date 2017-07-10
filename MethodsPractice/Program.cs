@@ -32,14 +32,19 @@ namespace MethodsPractice
 
             //Console.WriteLine("My future vehicle is {0} and Jordan's future vehicle {1}.", myVehicle, myFriendVehicle); // {0} and {1} are placeholders
 
-            string user = "Jessica";
-            string userFavoriteFood = "ice cream";
-            FavoriteFoods(user, userFavoriteFood);
-       
-            int ageOfUser = 30;
-            RetirementCalculator(ageOfUser);
+            //string user = "Jessica";
+            //string userFavoriteFood = "ice cream";
+            //FavoriteFoods(user, userFavoriteFood);
 
-        }
+            //int ageOfUser = 30;
+            //RetirementCalculator(ageOfUser);
+
+            double hoursWorkedWeekly = 42.3d;
+            double hourlyWage = 12.50d;
+
+            Console.WriteLine("Your monthly wage is {0}.", WageCalculator(hoursWorkedWeekly, hourlyWage));
+
+    }
 
         // best practice is to have main method be the top method in your program class
         // Method header:
@@ -108,6 +113,12 @@ namespace MethodsPractice
             Console.WriteLine("The user will retire in " + yearsUntilRetirement + " years.");
         }
 
+        public static double WageCalculator(double hoursWorkedWeekly, double hourlyWage)
+        {
+            // This method should calculate the monthly wage
+            double monthlyWage = (hoursWorkedWeekly * 52 * hourlyWage) / 12;
+            return monthlyWage;
+        }
 
     }
 }
