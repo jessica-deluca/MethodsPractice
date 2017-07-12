@@ -64,7 +64,37 @@ namespace MethodsPractice
             //int[] numberInArray = { 4,5,10,12,23 };
             //Console.WriteLine("The sum of the example array is " + Sum(numberInArray));
 
-        }
+            // Create a method called sumDigits that receives a number and returns the sum of its digits.
+            // For example, if the number is 123, the sum would be 6. 
+            // Inside main should look like this:
+            // Console.WriteLine( sumDigits(123) );
+
+            //{
+            //    int num;
+            //    Console.Write("Enter a number:");
+            //    num = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine(SumDigits(num));
+            //}
+
+            // Create a method which returns the greatest value stored in an array of numbers,
+            // which is specified as parameter:
+            // int[] data = { 87, 90, 23 }
+            // float max = findMaximum(data);
+
+            //Console.Write("Enter a number:");
+            //float numberOne = float.Parse(Console.ReadLine());
+
+            //Console.Write("Enter a number:");
+            //float numberTwo = float.Parse(Console.ReadLine());
+
+            //Console.Write("Enter a number:");
+            //float numberThree = float.Parse(Console.ReadLine());
+
+            //float[] myArray = { numberOne, numberTwo, numberThree };
+
+            //Console.WriteLine(findMaximum(myArray));
+
+    }
 
         // best practice is to have main method be the top method in your program class
         // Method header:
@@ -223,13 +253,25 @@ namespace MethodsPractice
         // Inside main should look like this:
         // Console.WriteLine( sumDigits(123) );
 
-        // public static int SumDigits(int[] myArray)
+        //public static int SumDigits(int n)
+        //{
+        //    string n1 = Convert.ToString(n);
+        //    int sum = 0;
+        //    for (int i = 0; i < n1.Length; i++)
+        //        sum += Convert.ToInt32(n1.Substring(i, 1));
+        //    return sum;
+        //}
 
-
-        // Create a method which returns the greatest value stored in an array of numbers which is specified as parameter:
+        // Create a method which returns the greatest value stored in an array of numbers,
+        // which is specified as parameter:
         // int[] data = { 87, 90, 23 }
         // float max = findMaximum(data);
 
+        //public static float findMaximum(float[]myArray)
+        //{
+        //    float max = myArray.Max();
+        //    return max;
+        //}
 
     }
 }
